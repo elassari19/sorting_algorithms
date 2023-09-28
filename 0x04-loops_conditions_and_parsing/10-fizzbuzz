@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# should print numbers
+#   should print "Fizz" when the multiple is 3
+#   should print "Buzz" when the multiple is 5
+#   Otherwise, displays the number.
+
+for number in {1..100}
+do
+  if (( number % 3 == 0 && number % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( number % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( number % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$number"
+  fi
+done

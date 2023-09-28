@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# should print "Best School" number of times
+
+item=0
+
+while [ $item -lt 10 ]
+do
+  echo "Best School"
+  (( item++ ))
+done

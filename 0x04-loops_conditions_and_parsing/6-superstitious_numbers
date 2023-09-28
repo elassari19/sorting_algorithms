@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# should iterate number of times
+#   should print "bad luck from China" in the 4th
+#   should print "bad luck from Japan" in the 9th
+#   should print "bad luck from Italy" in the 17th
+
+item=1
+
+while [ $item -le 20 ]
+do
+  echo "$item"
+  case $item in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( item++ ))
+done

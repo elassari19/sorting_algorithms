@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# should print "Best School" number of times
+#   should print "bad luck" in the 4th iteration
+#   should print "good luck" in the 8th iteration
+
+item=0
+
+while [ $item -lt 10 ]
+do
+  if [ $item -eq 3 ]
+  then
+    echo "bad luck"
+  elif [ $item -eq 7 ]
+  then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+  (( item++ ))
+done

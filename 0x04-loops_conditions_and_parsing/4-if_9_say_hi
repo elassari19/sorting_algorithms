@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# should print "Best School" number of times
+#   should print "Hi" first then "Best School" On 9th
+
+item=0
+
+while [ $item -lt 10 ]
+do
+  if [ $item -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( item++ ))
+done
